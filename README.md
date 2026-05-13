@@ -156,24 +156,6 @@ Message       : Air Quality is Good!
 
 ---
 
-## 📁 Project Structure
-
-```
-AQI_PROJECT/
-│
-├── AQI_PROJECT_.ipynb                              # Main Jupyter Notebook
-├── REAL TIME AIR QUALITY FROM VARIOUS LOCATION IN INDIA.csv  # Dataset
-├── best_model.pkl                                  # Saved best model
-├── scaler.pkl                                      # StandardScaler
-├── ohe_state.pkl                                   # OneHotEncoder for State
-├── ohe_city.pkl                                    # OneHotEncoder for City
-├── ohe_pollutant_id.pkl                            # OneHotEncoder for Pollutant
-├── train_columns.pkl                               # Feature column names
-└── README.md                                       # Project documentation
-```
-
----
-
 ## 🚀 Getting Started
 
 ### Prerequisites
