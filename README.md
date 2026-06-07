@@ -36,7 +36,7 @@ Air pollution is one of the most critical environmental challenges in India. Thi
 ###  States Covered
 Bihar, Assam, Andhra Pradesh, Andaman & Nicobar, Delhi, Chhattisgarh, Chandigarh, Gujarat, Haryana, Karnataka, Kerala, Madhya Pradesh, Himachal Pradesh, Jharkhand, Maharashtra, Odisha, Puducherry, Punjab, Meghalaya, West Bengal, and more.
 
-### 🧪 Pollutants Monitored
+###  Pollutants Monitored
 `NO2` · `SO2` · `CO` · `PM10` · `PM2.5` · `NH3` · `OZONE`
 
 ---
