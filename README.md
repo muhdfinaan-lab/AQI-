@@ -1,23 +1,23 @@
-# 🌫️ Air Quality Index (AQI) Prediction using Machine Learning
+# Air Quality Index (AQI) Prediction using Machine Learning
 
 > A machine learning project to classify and predict Air Quality Index (AQI) categories from real-time pollutant data collected across various locations in India.
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 Air pollution is one of the most critical environmental challenges in India. This project analyzes **real-time air quality data** from monitoring stations across multiple Indian states and cities. Using various machine learning classification algorithms, the model predicts the **AQI category** of a location based on pollutant readings — helping citizens and authorities take timely action.
 
 ---
 
-## 📂 Dataset
+##  Dataset
 
 - **File:** `REAL TIME AIR QUALITY FROM VARIOUS LOCATION IN INDIA.csv`
 - **Total Records:** 3,322 rows × 11 columns
 - **Source:** Real-time air quality monitoring stations across India
 - **Last Updated:** February 2026
 
-### 📋 Features
+###  Features
 
 | Column | Description |
 |---|---|
@@ -33,7 +33,7 @@ Air pollution is one of the most critical environmental challenges in India. Thi
 | `pollutant_max` | Maximum pollutant concentration recorded |
 | `pollutant_avg` | Average pollutant concentration recorded |
 
-### 🗺️ States Covered
+###  States Covered
 Bihar, Assam, Andhra Pradesh, Andaman & Nicobar, Delhi, Chhattisgarh, Chandigarh, Gujarat, Haryana, Karnataka, Kerala, Madhya Pradesh, Himachal Pradesh, Jharkhand, Maharashtra, Odisha, Puducherry, Punjab, Meghalaya, West Bengal, and more.
 
 ### 🧪 Pollutants Monitored
@@ -41,7 +41,7 @@ Bihar, Assam, Andhra Pradesh, Andaman & Nicobar, Delhi, Chhattisgarh, Chandigarh
 
 ---
 
-## 🎯 Target Variable — AQI Categories
+##  Target Variable — AQI Categories
 
 | Label | Category | Description |
 |---|---|---|
@@ -53,7 +53,7 @@ Bihar, Assam, Andhra Pradesh, Andaman & Nicobar, Delhi, Chhattisgarh, Chandigarh
 
 ---
 
-## 🔧 Tech Stack
+##  Tech Stack
 
 - **Language:** Python 3.13
 - **Environment:** Jupyter Notebook (Conda)
@@ -66,13 +66,13 @@ Bihar, Assam, Andhra Pradesh, Andaman & Nicobar, Delhi, Chhattisgarh, Chandigarh
 
 ---
 
-## 🔄 Project Workflow
+##  Project Workflow
 
 ```
 Raw Data → EDA → Preprocessing → Feature Engineering → Model Training → Evaluation → Prediction
 ```
 
-### 1. 📊 Exploratory Data Analysis (EDA)
+### 1.  Exploratory Data Analysis (EDA)
 - Dataset shape, data types, and null value inspection
 - Statistical summary (`describe()`)
 - Distribution analysis of pollutants across states and cities
@@ -80,7 +80,7 @@ Raw Data → EDA → Preprocessing → Feature Engineering → Model Training �
 - Correlation heatmaps
 - Pollutant-wise and state-wise visualizations using Seaborn and Matplotlib
 
-### 2. 🧹 Data Preprocessing
+### 2.  Data Preprocessing
 - **Missing Value Treatment:** Handled null values in `pollutant_min`, `pollutant_max`, and `pollutant_avg`
 - **Outlier Removal:** IQR-based outlier detection and capping
 - **Encoding:**
@@ -89,7 +89,7 @@ Raw Data → EDA → Preprocessing → Feature Engineering → Model Training �
   - `StandardScaler` applied to numerical features (`latitude`, `longitude`, `pollutant_min`, `pollutant_max`, `pollutant_avg`)
 - **Class Imbalance Handling:** Resampling techniques (SMOTE / oversampling) applied to balance AQI categories
 
-### 3. 🤖 Models Trained
+### 3.  Models Trained
 
 | Model | Test Accuracy |
 |---|---|
@@ -104,13 +104,13 @@ Raw Data → EDA → Preprocessing → Feature Engineering → Model Training �
 | Gradient Boosting | ~93.5% ✅ |
 | XGBoost | ~93.2% |
 
-> ✅ **Best Model: Gradient Boosting Classifier** with ~93.5% test accuracy
+>  **Best Model: Gradient Boosting Classifier** with ~93.5% test accuracy
 
-### 4. ⚙️ Hyperparameter Tuning
+### 4.  Hyperparameter Tuning
 - **GridSearchCV** applied to SVM (RBF kernel) for optimal `C` and `gamma`
 - Best SVM estimator retrained and evaluated
 
-### 5. 💾 Model Saving
+### 5.  Model Saving
 Trained models and encoders saved using `joblib`:
 
 ```
@@ -124,7 +124,7 @@ train_columns.pkl
 
 ---
 
-## 🖥️ Prediction Interface
+##  Prediction Interface
 
 A custom `run_model()` function allows interactive AQI prediction from user input:
 
@@ -156,7 +156,7 @@ Message       : Air Quality is Good!
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 ```bash
@@ -182,7 +182,7 @@ train_columns   = joblib.load('train_columns.pkl')
 
 ---
 
-## 📈 Results Summary
+##  Results Summary
 
 - **Best Model:** Gradient Boosting Classifier
 - **Test Accuracy:** ~93.5%
@@ -190,11 +190,3 @@ train_columns   = joblib.load('train_columns.pkl')
 - **Evaluation Metrics:** Accuracy Score, Confusion Matrix, Classification Report (Precision, Recall, F1-Score)
 
 ---
-
-## 📜 License
-
-This project is open-source and available under the [MIT License](LICENSE).
-
----
-
-> ⭐ If you found this project helpful, please give it a star!
